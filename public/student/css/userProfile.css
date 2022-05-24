@@ -1,0 +1,128 @@
+/* div that hold all links => to make links at the right end */
+.collapse{
+    justify-content: flex-end;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: large;
+    overflow-X: hidden;
+}
+
+/* nav */
+nav{
+    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+}
+.logoBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.logoBox img{
+    border-radius: 50%;
+}
+.fa-house,
+.fa-key,
+.fa-user,
+.fa-right-to-bracket{
+    transform: scale(1.6);
+    transition: all .3s ease-in-out;
+}
+.fa-house:hover,
+.fa-key:hover,
+.fa-user:hover,
+.fa-right-to-bracket:hover{
+    transform: scale(2);
+}
+.fa-house,
+.fa-user,
+.fa-key{
+    margin-right: 50px;
+}
+/* body */
+body{
+    background-color: rgba(221, 221, 221, 0.1);
+}
+.col-md-3{
+    border-right: 2px solid #ddd;
+    background-color: rgba(221, 221, 221, 0.3);
+    
+}
+.col-md-9{
+    /* 89.25px the height of navbar */
+    height: calc(100vh - 160px);
+    background-color: rgba(221, 221, 221, 0.3);
+    padding-top: 30px;
+}
+.userBox{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.username{
+    text-align: center;
+}
+.head{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+h3{
+    margin-bottom: 1px;
+    color: navy;
+}
+.data{
+    display: flex;
+    column-gap: 25%;
+}
+.user-data{
+    color: navy;
+    width: 350px;
+}
+.user-atrr{
+    width: 120px;
+}
+@media only screen and (max-width: 600px){
+    .data{
+        display: flex;
+        column-gap: 0px;
+    }
+    .user-data{
+        width: fit-content;
+    }
+}
+
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .footer .fa-envelope , .footer .fa-user-group {  
+        color: black;
+        
+        }
+        .footer a {
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        
+    
+        /* .page{
+            /* min-height: calc(100vh - 180px); */
+            /* padding-bottom:40px; */
+           
+        /* }   */
+/*  */

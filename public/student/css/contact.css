@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.collapse{
+    justify-content: flex-end;
+}
+nav{
+    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+}
+.logoBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.logoBox img{
+    border-radius: 50%;
+}
+.fa-house,
+.fa-key,
+.fa-user,
+.fa-right-to-bracket{
+    transform: scale(1.6);
+    transition: all .3s ease-in-out;
+}
+.fa-house:hover,
+.fa-key:hover,
+.fa-user:hover,
+.fa-right-to-bracket:hover{
+    transform: scale(2);
+}
+.fa-house,
+.fa-key,
+.fa-user{
+    margin-right: 50px;
+}
+/* body */
+h2{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-family: serif;
+    color: navy;
+}
+body{
+    background-color: rgba(221, 221, 221, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+.fas{
+    color: navy;
+}
+/* .containeer{
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+} */
+.form-control:focus{
+    border:1px solid #838fcd;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #838fcd ;
+}
+
+.navbar a{
+    
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+/*  */
+/* send btn */
+.sendBtn{
+    display: flex;
+    justify-content: center;
+}
+#send-btn{
+    background-color: rgb(61, 61, 170);
+    border-color:rgb(61, 61, 170);
+    width: 25%;
+    margin-bottom: 10px;
+    color: white;
+}
+.btn:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}
+.btn:focus {
+    outline: none;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(61, 61, 170);
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 70px;
+    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .footer .fa-envelope , .footer .fa-user-group {  
+        color: black;
+        
+        }
+        .footer a {
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
