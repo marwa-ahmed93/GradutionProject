@@ -15,9 +15,13 @@ class AddDataToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
+          
+
+          
+            
             $table->string('code')->nullable();
-            $table->string('firstName')->nullable();
-            $table->string('lastName')->nullable();
+            // $table->string('firstName')->nullable();
+            // $table->string('lastName')->nullable();
             $table->string('img')->nullable();
             $table->enum('gender',['famele','male'])->nullable();
             $table->enum('role',['student','professor','employee'])->nullable();

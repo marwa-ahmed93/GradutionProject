@@ -55,7 +55,17 @@
                             </li> 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register.form') }}">{{ __('Studnt-Register') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('professor.form') }}">{{ __('Professors-Register') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('employee.form') }}">{{ __('Employee-Register') }}</a>
                                 </li>
                             @endif
                         @else

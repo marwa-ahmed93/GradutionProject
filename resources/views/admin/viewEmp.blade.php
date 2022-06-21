@@ -4,12 +4,14 @@
 
 
 <!-- add student -->
+<!-- <button class="btn btn-brimary"><a class="nav-link" href="{{ route('register.form') }}">{{ __('Add Student') }}</a></button> -->
 
-@if (Route::has('register'))
 <div class="container col-3 mt-5 ml-auto">
-<a class="nav-link" href="{{ route('register') }}">{{ __('Add Student') }}</a>
+<button class="btn btn-brimary"><a href="{{ route('register.form') }}">{{ __('Add Student') }}</a></button>
 
-    @endif
+<!-- <a class="nav-link" href="{{ route('register.form') }}">{{ __('Add Student') }}</a> -->
+
+   
        <!-- <a href="formSt-affir.html"><button  id="addBtn"class="btn " type="submit">Add Student</button></a>  -->
     </div>
 

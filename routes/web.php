@@ -21,7 +21,22 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::namespace('Auth')->group(function(){
+//register student
+Route::get('student/register','RegisterController@studentRegister')->name('register.form');
+Route::get('student/login','LoginController@loginPage')->name('login.form');
+Route::post('get/student/register','RegisterController@sortstudentRegister')->name('register');
 
+//register professor
+Route::get('professor/register','RegisterController@professorRegister')->name('professor.form');
+Route::post('get/professor/register','RegisterController@sortprofessorRegister')->name('professor.register');
+
+
+//register employee
+Route::get('employee/register','RegisterController@employeeRegister')->name('employee.form');
+Route::post('get/employee/register','RegisterController@sortemployeeRegister')->name('employee.register');
+
+});
 Route::namespace('Front')->group(function(){
 
     Route::get('/', 'HomePageController@index')->name('front.homepage');
@@ -42,6 +57,9 @@ Route::get('/student/email', 'StudentController@studentemail')->name('student.em
 Route::get('/student/complaints', 'StudentController@studentcomplaints')->name('student.complaints');
 Route::post('/student/complaintsForms', 'StudentController@complaintsForms')->name('student.complaintsForms');
 
+//register
+// Route::get('student/register','StudentRegiserController@studentRegister')->name('student.register');
+// Route::post('get/student/register','StudentRegiserController@sortstudentRegister')->name('sortStudent.register');
 
 });
 

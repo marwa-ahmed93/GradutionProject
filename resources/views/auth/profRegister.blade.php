@@ -8,11 +8,8 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('professor.register') }}" enctype="multipart/form-data">
                         @csrf
-
-
-               
 
                         <!-- user name -->
                         <div class="form-group row">
@@ -156,7 +153,7 @@
                             <label for="birthDate" class="col-md-4 col-form-label text-md-right">{{ __('Birth_date') }}</label>
 
                             <div class="col-md-6">
-                                <input id="birthDate" type="date" class="form-control @error('birthDate') is-invalid @enderror" name="birthDate" value="{{ old('birthDate') }}" required autocomplete="birthDate" autofocus>
+                                <input id="birthDate" type="text" class="form-control @error('birthDate') is-invalid @enderror" name="birthDate" value="{{ old('birthDate') }}" required autocomplete="birthDate" autofocus>
 
                                 @error('birthDate')
                                     <span class="invalid-feedback" role="alert">
@@ -204,7 +201,7 @@
                             <label for="identityNumder" class="col-md-4 col-form-label text-md-right">{{ __('Identity_numder') }}</label>
 
                             <div class="col-md-6">
-                                <input id="identityNumder" type="number" class="form-control @error('identityNumder') is-invalid @enderror" name="identityNumder" value="{{ old('identityNumder') }}" required autocomplete="identityNumder" autofocus>
+                                <input id="identityNumder" type="text" class="form-control @error('identityNumder') is-invalid @enderror" name="identityNumder" value="{{ old('identityNumder') }}" required autocomplete="identityNumder" autofocus>
 
                                 @error('identityNumder')
                                     <span class="invalid-feedback" role="alert">
@@ -231,7 +228,7 @@
                         </div> 
 
                               <!-- regiser isBlocked    -->
-                                 <div class="form-group row">
+                              <div class="form-group row">
                             <label for="isBlocked" class="col-md-4 col-form-label text-md-right">{{ __('Is_blocked') }}</label>
 
                             <div class="col-md-6">
@@ -247,7 +244,7 @@
 
 
                             <!-- regiser isActive    -->
-                          <div class="form-group row">
+                            <div class="form-group row">
                             <label for="isActive" class="col-md-4 col-form-label text-md-right">{{ __('Is_active') }}</label>
 
                             <div class="col-md-6">
@@ -275,27 +272,21 @@
                             </div>
                         </div> 
 
+         <!-- Salary    -->
+           <div class="form-group row">
+                            <label for="salary" class="col-md-4 col-form-label text-md-right">{{ __('Salary') }}</label>
 
-                           <!-- regiser grade   -->
-                           <div class="form-group row">
-                            <label for="grade" class="col-md-4 col-form-label text-md-right">{{ __('Grade') }}</label>
                             <div class="col-md-6">
-                          <select name="grade" class="form-control @error('grade') is-invalid @enderror" name="grade" value="{{ old('grade') }}" required autocomplete="grade" autofocus>
-                           <option value="primary">primary</option>
-                           <option value="first">first</option>
-                           <option value="second">second</option>
-                           <option value="third">third</option>
-                           <option value="fourth">fourth</option>
-                              </select>
-                          
+                                <input id="salary" type="numder" class="form-control @error('salary') is-invalid @enderror" name="salary" value="{{ old('salary') }}" required>
 
-                                @error('grade')
+                                @error('salary')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                         </div> 
+                     
 
 
                         <div class="form-group row mb-0">

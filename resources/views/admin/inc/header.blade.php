@@ -19,7 +19,7 @@
                 <img src="{{ asset('student/img/logo.JPG')}}" alt="logo" width="60" height="60">
             </div>
         </a>
-        <h6 class="col-md-6 p-3"> {{ Auth::user()->name }}</h6>  
+        <h6 class="col-md-6 p-3"> {{ Auth::user()['name'] }}</h6>
        
   <div class="container-fluid">
  
