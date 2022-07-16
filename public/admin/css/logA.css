@@ -1,0 +1,217 @@
+/* div that hold all links => to make links at the right end */
+.collapse{
+    justify-content: flex-end;
+}
+*{
+    font-family: 'Abel' ;
+    line-height: 1.5;
+    font-size: large;
+}
+/* nav */
+nav{
+    /* background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170)); */
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+}
+.logoBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.logoBox img{
+    border-radius: 50%;
+}
+
+/* .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+} */
+
+.btn{
+    background-color: #3d3fbb;
+    border-color:#3d3fbb ;
+    color: white;
+    padding: 6px;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}
+
+ul li a {
+    color: #5c6bc0 !important;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+ul li a:hover{
+    /* color: #ccc !important;   */
+    color:#c5c0c0 !important ;
+}  
+
+*{
+    font-family: 'Abel';
+    line-height: 1.5;
+    font-size: large;
+}
+body{
+    background-color: #a9a9a914;
+}
+.border{
+    padding: 20px;
+    border: 1px solid rgb(18, 18, 83);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image:url("img/logo.JPG");
+    background-size:100% 100%;
+    float: left;
+}
+
+/* .brd{
+    border-bottom: 1px solid #337ab7;   
+}
+.error{
+    border-bottom: 1px solid red !important
+} */
+
+.form-groupEmail,.form-groupPass,.form-group{
+    border-bottom: 1px solid rgb(18, 18, 83) ;
+}
+.form-group i{
+    color: rgb(18, 18, 83);
+}
+/* Forget password & Check box */
+.re-for{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color:rgb(18, 18, 83);
+    text-decoration-line: none;
+    font-size: 14px;
+}
+.check{
+    display: inline;  
+}
+label{
+    font-size: 14px;
+    color:#5c5757;
+}
+/* input */
+.form-group input, select{
+    width: 85%;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 10px 0;
+}
+/* password div */
+.pass{
+    margin-bottom: 1px;
+}
+select{
+    width: 99%;
+}
+.help-block{
+    font-size: 14px;
+}
+.sel-mr{
+    margin-bottom: 0px;
+}
+/* submit button */
+.logBtn{
+    margin:10px auto;
+}
+.btn{
+    width: 40%;
+    margin-left: 28%;
+    margin-right: 28%;
+    background-color: rgb(18, 18, 83);
+    border: rgb(18, 18, 83);
+    color: white;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}
+/* reset password  in forgot password */
+.forgot-pass{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* div that hold all links => to make links at the right end */
+.collapse{
+    justify-content: flex-end;
+}
+/* nav */
+nav{
+    /* background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170)); */
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+}
+.logoBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.logoBox img{
+    border-radius: 50%;
+}
+
+.btn{
+    background-color: #3d3fbb;
+    border-color:#3d3fbb ;
+    color: white;
+    padding: 6px;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}
+
+.fa-arrow-right{
+    transform: scale(1.6);
+    transition: all .3s ease-in-out;
+    color: #5c6bc0;
+}
+
+.fa-arrow-right:hover{
+    transform: scale(2);
+}
+
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+

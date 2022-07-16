@@ -1,11 +1,12 @@
 <?php
-
 namespace App\Http\Controllers\Auth;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use Auth;
+use App\User;
+use App\Student;
 class LoginController extends Controller
 {
     /*
@@ -38,7 +39,30 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    // public function loginPage(){
+    //     return view('auth.login');
+    // }
     public function loginPage(){
+        // $student=Student::where('id','=',$id)->first();
         return view('auth.login');
+    }
+
+    public function loginHandel(Request $request){
+      $cred=array('email' => $request->email,"password"=> $request->password);
+      if(Auth::attempt($cred) && Auth::User()->role=='student'){
+          $id = auth()->User()->id;
+          return redirect("/student/payment/$id");
+         }
+      elseif(Auth::attempt($cred) && Auth::User()->role=='professor'){
+        return redirect('/student/view');
+          }
+    elseif(Auth::attempt($cred) && Auth::User()->role=='employee'){
+        return redirect('/employee/home');
+         }
+    else
+    {
+        return back();
+      }
+ 
     }
 }

@@ -1,0 +1,67 @@
+
+*{
+    font-family: 'Abel';
+    font-size: large;  
+    font-weight: bolder;
+    direction: rtl;
+    text-align: right;
+    color: navy;
+    box-sizing: border-box;
+   
+}
+.container{
+    background-color: whitesmoke;
+ 
+}
+
+.form-control{
+    border:  1px rgb(18, 18, 83);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}
+#submitBtn{
+    font-size: larger ; 
+    font-weight:bolder;
+    letter-spacing: 2px;
+    font-family: 'Abel';
+}
+option{
+    font-size:medium;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-family: 'Abel';
+
+}
+
+
+
+
+
+
+    .img_display2 {
+        width: 100%;
+        min-height: 250px;
+        margin: 20px 0 0 0;
+        border: 1px solid  rgb(205, 205, 228);
+        box-shadow: 2px 2px 4px 0 rgb(18 18 83 / 5%);
+        /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .4); */
+        background-position: center;
+        background-size: cover;
+    } 
+    .file .form-control {
+        background: #efefef none repeat scroll 0 0;
+        border: 0 none;
+        box-shadow: 2px 2px 4px 0 rgb(18 18 83 / 5%);
+        
+        /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(18, 18, 83, .4); */
+        font-size: 14px;
+        height: 50px;
+        padding: 0;
+        text-align: right;
+        line-height: 43px;}
+/* اللوجو   */
+        .logoBox{
+            width: 100px;
+            height: 100px;
+            background-image:url(../img/logo.jpg);
+            background-size: 100%  100%;
+        }

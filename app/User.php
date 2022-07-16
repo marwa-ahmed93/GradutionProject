@@ -9,6 +9,7 @@ use App\Student;
 use App\Professor;
 use App\Employee;
 use App\Admin;
+use App\Payment_transaction;
 class User extends Authenticatable
 {
  
@@ -30,6 +31,10 @@ class User extends Authenticatable
         return $this->hasOne('App\Admin');
     }
 
+    public function payment_transaction()
+    {
+        return $this->hasMany('App\Payment_transaction');
+    }
 
     use Notifiable;
 

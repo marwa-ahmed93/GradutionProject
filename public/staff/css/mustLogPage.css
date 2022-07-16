@@ -1,0 +1,37 @@
+body{
+    font-family: "Abel";
+}
+.loginMessage{
+    width: 65%;
+    margin: 12% auto 20px auto;
+
+}
+.loginMessage img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+   
+}
+.loginMessage p{
+    font-size: 19px;
+    font-weight: 600;
+}
+/* submit button */
+.logBtn{
+    margin:10px auto;
+}
+.btn{
+    width: 40%;
+    margin-left: 28%;
+    margin-right: 28%;
+    background-color: rgb(18, 18, 83);
+    border: rgb(18, 18, 83);
+    color: white;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:hover{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 18, 83, .6);
+}

@@ -18,8 +18,8 @@ class CreateIdCardsTable extends Migration
             $table->string('name');
             $table->string('department');
             $table->string('grade');
-            $table->integer('university_code');
-            $table->string('academic_year');
+            $table->integer('university_code')->nullable();
+            $table->string('academic_year')->nullable();
             $table->string('img');
             $table->timestamps();
         });

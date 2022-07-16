@@ -15,9 +15,9 @@ class CreateElectricalDesiersTable extends Migration
     {
         Schema::create('electrical_desiers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('national_id');
-            $table->integer('seat_number');
+            $table->string('user_name');
+            $table->string('user_nationalId');
+            $table->integer('user_seatNumber');
             $table->string('your_desire');
             $table->timestamps();
         });

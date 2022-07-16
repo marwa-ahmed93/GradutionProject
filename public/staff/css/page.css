@@ -1,0 +1,101 @@
+body{
+    direction: rtl;
+    text-align: right;
+}
+
+/* nav */
+nav{
+    /* background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170)); */
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
+    justify-content: flex-end !important;
+}
+/* اللوجو */
+.logoBox{
+    width: 100px;
+    height: 100px;
+    background-image:url(../img/logo.jpg);
+    background-size: 100%  100%;
+}
+
+.fa-arrow-left{
+    transform: scale(1.7);
+    color: #5c6bc0;
+}
+/* ............ */
+.parent{
+    height:29.7cm;
+    width: 21cm;
+    margin: 100px auto 5px;
+    padding: 20px;
+    background-color: white;
+}
+.parent .container{
+    border: 3px solid black;
+    outline: 1px solid black;
+    outline-offset:2px ;
+   height: calc(100% - 40px);
+   width: calc(100% - 40px);
+    padding: 30px;
+    font-size: 18px;
+}
+/* input{
+    width: 260px;
+    border: 0;
+    padding: 0;
+} */
+/* input:focus{
+    border: none;
+    outline: none;
+} */
+.intro{
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+/* in six.html  */
+.bigDiv{ 
+    margin-top: 80px; 
+    display: flex;
+    justify-content: space-between;
+}
+.message{
+    margin: 37px 0 10px;
+}
+button{
+    
+    color: white;
+    background-color:#5c6bc0;
+    /* background: rgb(17, 17, 202); */
+    padding: 9px 30px !important;
+    display: block !important;
+    margin:0 auto 20px !important;
+}
+.contain{
+    margin-top: 15px;
+}
+
+/* In Graduated */
+.information{
+    margin-top: 30px; 
+    text-align: center;
+}
+.information ul li {
+    list-style: none;
+    font-weight: 600;
+}
+.gradu{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .bg-light{
+        width: 200%;
+    }
+}
+
+/* Graduated section */
+hr{
+    background-color: black;
+}
+.en{
+    direction: ltr;
+}

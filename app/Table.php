@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Table extends Model
 {
     //
+    protected $guarded  = ['id'];
+    protected $fillable = [
+        'name' ,
+        'img'  
+    ];
 }

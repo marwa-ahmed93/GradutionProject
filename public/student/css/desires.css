@@ -4,14 +4,11 @@
     justify-content: flex-end;
 }
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Abel';
     line-height: 1.5;
     font-size: large;
 }
-nav{
-    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
-}
+
 .logoBox{
     width: 60px;
     height: 60px;
@@ -20,23 +17,40 @@ nav{
 .logoBox img{
     border-radius: 50%;
 }
-.fa-house,
-.fa-key,
-.fa-user,
-.fa-right-to-bracket{
-    transform: scale(1.6);
-    transition: all .3s ease-in-out;
+
+/* nav */
+.navbar{
+    background-color:rgba(0,0,0,.6) !important;
+    letter-spacing: 2px;
 }
-.fa-house:hover,
-.fa-key:hover,
-.fa-user:hover,
-.fa-right-to-bracket:hover{
-    transform: scale(2);
+.navbar li .nav-link{
+    text-decoration: none; 
+    padding:10px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: large;
+    color: white !important; 
 }
-.fa-house,
-.fa-key,
-.fa-user{
-    margin-right: 50px;
+.nav-item{
+    word-spacing: -1px !important;
+}
+
+.dropdown-menu{
+    background-color:white !important;
+}
+.navbar li a:hover,.navbar li a:active{
+    color:gray !important;
+    /* color: #ffe633 !important; */
+    font-weight: 600;
+    
+}
+.active{
+    color:gray ; 
+  
+}
+.blue{
+color:#ddd !important;
+    
 }
 /* body */
 body{
@@ -44,11 +58,22 @@ body{
 }
 h2{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 130px;
     margin-bottom: 15px;
-    font-family: serif;
-    color: navy;
+    color: #5c6bc0;
 }
+.info{
+    color: #5c6bc0;
+    margin: auto;
+    width: 73%;
+}
+.info p{
+    font-size: 20px;
+}
+.info ul li{
+    list-style-position: inside;
+}
+
 select:invalid{
     color: gray;
 }
@@ -70,6 +95,9 @@ option{
     width: 100%;
     justify-content: center;
 }
+.bold{
+    font-weight: 600;
+}
 .form-control:focus{
     border:1px solid #838fcd;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #838fcd ;
@@ -78,6 +106,7 @@ h6{
     margin-top: 15px;
     line-height: 1.5;
     font-size: 20px;
+    font-weight: 600;
 }
 .desireForm label,
 .desireForm input{
@@ -119,35 +148,68 @@ h6{
 #electricForm{
     display: none;
 }
+.footerMar{
+    margin-bottom: 120px;
+}
+/* .page{
+    min-height: calc(100vh - 220px);
+    padding-bottom: 40px;
+} */
 
 /* footer */
 .footer{
     width: 100%;
-    height: 70px;
-    background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170));
+    height: 120px;
+    /* position: fixed;
+    bottom: 0px;
+    right: 0px; */
+    left: 0px;
+    background-color: black;
+    /* background-color:rgba(0,0,0,.6) !important; */
+    /* background:linear-gradient(90deg,rgb(61, 61, 170),#bcd1e9,rgb(61, 61, 170)); */
+    /* background-color: black; */
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 10px black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+    color: #ddd;
+    margin-bottom: 0px;
     }
-    .footer .fa-envelope , .footer .fa-user-group {  
-        color: black;
-        
-        }
-        .footer a {
-            text-decoration: none;
-            font-weight: normal;
-            color: black;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-        
-    
-    .page{
-        min-height: calc(100vh - 220px);
-        padding-bottom: 40px;
 
-    } 
-       
-    
+    .foot-list li{
+        display: inline-block !important ;
+    }
+    .icons{
+        width: 100%;
+    }
+    .fas{
+        color: white;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .icons ul li {
+        margin-right: 30px;
+    }
+    .icons ul li p{
+        margin-bottom: 0px;
+        color: #ddd;
+        font-size: 16px;
+    }
+    /* copyRights */
+    .mb-0{
+        font-size: 15px;
+    }
+    @media only screen and (max-width: 600px) {
+        .foot-list li{
+            display: block !important ;
+        }
+        .footer{
+            height: 300px;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        .navbar-toggler{
+            /* background-color: #ffe633; */
+            background-color: #ddd;
+        }}

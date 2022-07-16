@@ -34,4 +34,7 @@ class MessageController extends Controller
                 Message::create($data);
                 return back();
               }
+              public function viewMessage(){
+                      return view('front.viewContact');
+              }
 }

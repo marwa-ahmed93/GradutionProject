@@ -18,6 +18,17 @@ class CreatePrimaryDesiersTable extends Migration
             $table->string('name');
             $table->string('national_id');
             $table->integer('seat_number');
+            // $table->enum('first_desire',['System & Computer Engineering','Electrical Engineering' ,
+            // 'Architecture Engineering' , 'Urban Planning Engineering']);
+
+            // $table->enum('second_desire',['System & Computer Engineering','Electrical Engineering' ,
+            // 'Architecture Engineering' , 'Urban Planning Engineering']);
+
+            // $table->enum('third_desire',['System & Computer Engineering','Electrical Engineering' ,
+            // 'Architecture Engineering' , 'Urban Planning Engineering']);
+
+            // $table->enum('fourth_desire',['System & Computer Engineering','Electrical Engineering' ,
+            // 'Architecture Engineering' , 'Urban Planning Engineering']);
             $table->string('first_desire');
             $table->string('second_desire');
             $table->string('third_desire');

@@ -53,7 +53,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('front.homepage') }}">{{ __('Back') }}</a>
                             </li> 
-                            @if (Route::has('register'))
+                            <!-- @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register.form') }}">{{ __('Studnt-Register') }}</a>
                                 </li>
@@ -67,9 +67,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('employee.form') }}">{{ __('Employee-Register') }}</a>
                                 </li>
-                            @endif
+                            @endif -->
                         @else
                         
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('emp.home') }}">{{ __('Back') }}</a>
+                            </li> 
+
                         <li id="navbarDropdown" class="nav-link dropdown-item"  role="button"  aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }}
                         </li>
@@ -79,6 +83,9 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+
+                                   
+                                    <!-- <a class="btn btn-sm btn-primary" href="{{ route('emp.view') }}">Back</a> -->
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

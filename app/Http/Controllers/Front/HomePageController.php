@@ -13,4 +13,11 @@ class HomePageController extends Controller
 
         return view('front.index');
             }
+
+    public function about(){
+
+     return view('front.about');
+                    }
+
+
 }
